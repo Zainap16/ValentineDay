@@ -10,8 +10,9 @@ let yesBtn = document.getElementById("btn-yes");
 let headingH1 = document.getElementById("head");
 let image = document.getElementById("wabbit");
 
-let i = 0
-let z = 0
+let i = 0;
+let z = 0;
+
 noBtn.addEventListener("click",function() {
     if (i === listYes.length - 1){
         yesBtn.style.width = "100vw"; // Full width of the screen
@@ -26,7 +27,7 @@ noBtn.addEventListener("click",function() {
     yesBtn.style.width = sizeIncrease[z];
     console.log(sizeIncrease[z]);
 
-
+   
 });
 
 yesBtn.addEventListener("click", function(){
@@ -34,13 +35,14 @@ yesBtn.addEventListener("click", function(){
 
     image.src = "./success.jpeg"
     image.style.width = "100vw";
-    
+
     noBtn.disabled = true;
-    noBtn.remove();
+    // noBtn.remove();
     noBtn.parentElement.removeChild(noBtn);
 
-    yesBtn.remove();
+    // yesBtn.remove();
     yesBtn.parentElement.removeChild(yesBtn);
+    
 
 })
 
