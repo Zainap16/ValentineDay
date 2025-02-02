@@ -17,7 +17,7 @@ noBtn.addEventListener("click",function() {
     if (i === listYes.length - 1){
         yesBtn.style.width = "100vw"; // Full width of the screen
                 yesBtn.style.height = "100vh"; // Full height of the screen
-                yesBtn.parentElement.removeChild(yesBtn);
+                noBtn.parentElement.removeChild(noBtn);
 
     };
  i = (i + 1) % listYes.length;
