@@ -12,13 +12,14 @@ h1{
     color: red;
     text-align: center;
     padding: 5% 5%;
+    font-size: 4rem;
 }
 
 #wabbit{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width:45%;
+    width:40%;
 }
 
 .container{

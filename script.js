@@ -33,7 +33,15 @@ yesBtn.addEventListener("click", function(){
     headingH1.textContent = "US😉";
 
     image.src = "./success.jpeg"
+    image.style.width = "100vw";
+    
     noBtn.disabled = true;
+    noBtn.remove();
+    noBtn.parentElement.removeChild(noBtn);
+
+    yesBtn.remove();
+    yesBtn.parentElement.removeChild(yesBtn);
+
 })
 
 
